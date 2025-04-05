@@ -23,9 +23,9 @@ A powerful Next.js application that enables users to generate optimized images f
 ## 🛠️ Tech Stack
 
 - **Frontend**
-  - Next.js 13
-  - React 18
-  - Tailwind CSS
+  - Next.js 15
+  - React 19
+  - Tailwind CSS (v4)
 - **Authentication**
   - NextAuth.js
 - **Database**
