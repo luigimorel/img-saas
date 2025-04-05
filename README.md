@@ -1,61 +1,82 @@
-# Social Media Image Generator
+# ImageSaaS - Social Media Image Generator
 
-An AI-powered SaaS application that helps users generate optimized images for various social media platforms using OpenAI's image generation capabilities.
+A Next.js application that allows users to generate optimized images for various social media platforms.
 
 ## Features
 
-- Upload images and generate variations optimized for different social media platforms
-- Support for Facebook, Twitter, and Reddit image dimensions
-- Optional caption generation
-- Modern, responsive UI with drag-and-drop functionality
-- Real-time image preview
+- Upload images and generate optimized versions for different social media platforms
+- Authentication with email/password, Google, Apple, and Microsoft
+- Responsive design for all device sizes
+- Modern UI with Tailwind CSS
 
 ## Tech Stack
 
-- Next.js 14 with App Router
-- TypeScript
-- Tailwind CSS
-- OpenAI API
-- UploadThing for file uploads
-- NextAuth.js for authentication
+- **Frontend**: Next.js, React, Tailwind CSS
+- **Authentication**: NextAuth.js
+- **Database**: PostgreSQL with Prisma ORM
+- **Image Processing**: Custom API endpoints
 
 ## Getting Started
 
-1. Clone the repository
+### Prerequisites
+
+- Node.js 18+ and npm
+- PostgreSQL database
+- OAuth credentials for Google, Apple, and Microsoft (optional)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/imgsaas.git
+   cd imgsaas
+   ```
+
 2. Install dependencies:
    ```bash
    npm install
    ```
 
-3. Create a `.env.local` file in the root directory with the following variables:
-   ```
-   OPENAI_API_KEY=your_openai_api_key_here
-   UPLOADTHING_SECRET=your_uploadthing_secret_here
-   UPLOADTHING_APP_ID=your_uploadthing_app_id_here
-   NEXT_PUBLIC_APP_URL=http://localhost:3000
+3. Set up the database:
+   ```bash
+   npx prisma migrate dev
    ```
 
-4. Run the development server:
+4. Create a `.env.local` file based on `.env.local.example`:
+   ```bash
+   cp .env.local.example .env.local
+   ```
+
+5. Update the `.env.local` file with your credentials:
+   - Generate a NEXTAUTH_SECRET: `openssl rand -base64 32`
+   - Set up your database URL
+   - Add your OAuth credentials (if using social login)
+
+6. Run the development server:
    ```bash
    npm run dev
    ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
+7. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Usage
+## Authentication
 
-1. Upload an image by dragging and dropping or clicking the upload area
-2. Select a target social media platform
-3. Optionally add a caption
-4. Click "Generate Image" to create an optimized version
-5. Download or share the generated image
+The application supports multiple authentication methods:
 
-## Image Dimensions
+- **Email/Password**: Traditional sign-up and sign-in
+- **Google OAuth**: Sign in with Google
+- **Apple OAuth**: Sign in with Apple
+- **Microsoft OAuth**: Sign in with Microsoft
 
-- Facebook: 1200 x 630 pixels
-- Twitter: 1200 x 675 pixels
-- Reddit: 1200 x 628 pixels
+## Deployment
+
+The application can be deployed to Vercel with minimal configuration:
+
+1. Push your code to GitHub
+2. Import the repository to Vercel
+3. Set up the environment variables
+4. Deploy
 
 ## License
 
-MIT
+This project is licensed under the MIT License - see the LICENSE file for details.
