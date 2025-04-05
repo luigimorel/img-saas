@@ -3,8 +3,8 @@
 <div align="center">
   <img src="public/hero.png" alt="ImageSaaS Hero" width="600"/>
   
-  [![Next.js](https://img.shields.io/badge/Next.js-13-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
-  [![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://reactjs.org)
+  [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
+  [![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)](https://reactjs.org)
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
   [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org)
   [![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://www.prisma.io)
@@ -19,13 +19,6 @@ A powerful Next.js application that enables users to generate optimized images f
 - 📱 Responsive design for all device sizes
 - 🎨 Modern UI with Tailwind CSS
 - 🤖 AI-powered image generation
-
-## 📸 Screenshots
-
-<div align="center">
-  <img src="public/hero.png" alt="Homepage Screenshot" width="600"/>
-  <p><em>AI-powered image generation interface with neural network visualization</em></p>
-</div>
 
 ## 🛠️ Tech Stack
 
@@ -99,7 +92,7 @@ NEXTAUTH_URL=http://localhost:3000
 NEXTAUTH_SECRET=your-nextauth-secret # Generate with: openssl rand -base64 32
 
 # Database
-DATABASE_URL="postgresql://username:password@localhost:5432/imgsaas?schema=public"
+DATABASE_URL="postgresql://username:password@localhost:5432/example-db?schema=public"
 
 # OAuth Credentials
 GOOGLE_CLIENT_ID=your-google-client-id
