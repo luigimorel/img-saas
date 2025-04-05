@@ -2,6 +2,8 @@
 
 A Next.js application that allows users to generate optimized images for various social media platforms.
 
+![ImageSaaS Hero](public/hero.png)
+
 ## Features
 
 - Upload images and generate optimized versions for different social media platforms
@@ -9,12 +11,21 @@ A Next.js application that allows users to generate optimized images for various
 - Responsive design for all device sizes
 - Modern UI with Tailwind CSS
 
+## Screenshots
+
+Here's what the application looks like:
+
+![Homepage Screenshot](public/hero.png)
+
+*AI-powered image generation interface with neural network visualization*
+
 ## Tech Stack
 
 - **Frontend**: Next.js, React, Tailwind CSS
 - **Authentication**: NextAuth.js
 - **Database**: PostgreSQL with Prisma ORM
 - **Image Processing**: Custom API endpoints
+- **AI Integration**: OpenAI API for image generation
 
 ## Getting Started
 
@@ -23,6 +34,7 @@ A Next.js application that allows users to generate optimized images for various
 - Node.js 18+ and npm
 - PostgreSQL database
 - OAuth credentials for Google, Apple, and Microsoft (optional)
+- OpenAI API key for AI image generation
 
 ### Installation
 
@@ -51,6 +63,7 @@ A Next.js application that allows users to generate optimized images for various
    - Generate a NEXTAUTH_SECRET: `openssl rand -base64 32`
    - Set up your database URL
    - Add your OAuth credentials (if using social login)
+   - Add your OpenAI API key
 
 6. Run the development server:
    ```bash
