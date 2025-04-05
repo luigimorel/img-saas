@@ -52,7 +52,7 @@ export default function Home() {
               <div className="mx-auto lg:mx-0 relative">
                 <div className="relative rounded-lg overflow-hidden border shadow-xl">
                   <img
-                    src="/placeholder.svg?height=600&width=800"
+                    src="https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="AI generated social media post example"
                     className="w-full h-auto max-w-full rounded-lg shadow-lg object-cover aspect-video"
                     width={800}
@@ -60,7 +60,7 @@ export default function Home() {
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
                     <p className="text-white font-medium">
-                      "Exploring new horizons under the golden sunset. #Adventure #Travel #Wanderlust"
+                      "A world connected by tech. #World #Tech"
                     </p>
                   </div>
                 </div>

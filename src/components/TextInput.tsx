@@ -8,6 +8,7 @@ interface TextInputProps {
   placeholder?: string;
   multiline?: boolean;
   rows?: number;
+  type?: string;
 }
 
 export default function TextInput({
@@ -18,6 +19,7 @@ export default function TextInput({
   placeholder = "",
   multiline = false,
   rows = 1,
+  type = "text",
 }: TextInputProps) {
   return (
     <div>
@@ -38,7 +40,7 @@ export default function TextInput({
         />
       ) : (
         <input
-          type="text"
+          type={type}
           id={id}
           value={value}
           onChange={(e) => onChange(e.target.value)}
