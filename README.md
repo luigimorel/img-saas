@@ -1,87 +1,124 @@
-# ImageSaaS - Social Media Image Generator
+# ImageSaaS - Social Media Image Generator 🚀
 
-A Next.js application that allows users to generate optimized images for various social media platforms.
+<div align="center">
+  <img src="public/hero.png" alt="ImageSaaS Hero" width="600"/>
+  
+  [![Next.js](https://img.shields.io/badge/Next.js-13-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
+  [![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://reactjs.org)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+  [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org)
+  [![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://www.prisma.io)
+</div>
 
-![ImageSaaS Hero](public/hero.png)
+A powerful Next.js application that enables users to generate optimized images for various social media platforms. Built with modern technologies and best practices.
 
-## Features
+## ✨ Features
 
-- Upload images and generate optimized versions for different social media platforms
-- Authentication with email/password, Google, Apple, and Microsoft
-- Responsive design for all device sizes
-- Modern UI with Tailwind CSS
+- 🖼️ Upload and optimize images for different social media platforms
+- 🔐 Multiple authentication methods (Email, Google, Apple, Microsoft)
+- 📱 Responsive design for all device sizes
+- 🎨 Modern UI with Tailwind CSS
+- 🤖 AI-powered image generation
 
-## Screenshots
+## 📸 Screenshots
 
-Here's what the application looks like:
+<div align="center">
+  <img src="public/hero.png" alt="Homepage Screenshot" width="600"/>
+  <p><em>AI-powered image generation interface with neural network visualization</em></p>
+</div>
 
-![Homepage Screenshot](public/hero.png)
+## 🛠️ Tech Stack
 
-*AI-powered image generation interface with neural network visualization*
+- **Frontend**
+  - Next.js 13
+  - React 18
+  - Tailwind CSS
+- **Authentication**
+  - NextAuth.js
+- **Database**
+  - PostgreSQL
+  - Prisma ORM
+- **Image Processing**
+  - Custom API endpoints
+- **AI Integration**
+  - OpenAI API
 
-## Tech Stack
-
-- **Frontend**: Next.js, React, Tailwind CSS
-- **Authentication**: NextAuth.js
-- **Database**: PostgreSQL with Prisma ORM
-- **Image Processing**: Custom API endpoints
-- **AI Integration**: OpenAI API for image generation
-
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
 - Node.js 18+ and npm
 - PostgreSQL database
-- OAuth credentials for Google, Apple, and Microsoft (optional)
-- OpenAI API key for AI image generation
+- OAuth credentials (optional)
+  - Google
+  - Apple
+  - Microsoft
+- OpenAI API key
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository**
    ```bash
    git clone https://github.com/luigimorel/img-saas.git
    cd imgsaas
    ```
 
-2. Install dependencies:
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. Set up the database:
+3. **Set up the database**
    ```bash
    npx prisma migrate dev
    ```
 
-4. Create a `.env.local` file based on `.env.local.example`:
+4. **Configure environment variables**
    ```bash
    cp .env.local.example .env.local
    ```
 
-5. Update the `.env.local` file with your credentials:
-   - Generate a NEXTAUTH_SECRET: `openssl rand -base64 32`
-   - Set up your database URL
-   - Add your OAuth credentials (if using social login)
-   - Add your OpenAI API key
+5. **Update `.env.local` with your credentials**
+   - Generate NEXTAUTH_SECRET: `openssl rand -base64 32`
+   - Configure database URL
+   - Add OAuth credentials
+   - Set OpenAI API key
 
-6. Run the development server:
+6. **Start the development server**
    ```bash
    npm run dev
    ```
 
-7. Open [http://localhost:3000](http://localhost:3000) in your browser.
+7. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Authentication
+## ⚙️ Environment Variables
 
-The application supports multiple authentication methods:
+```bash
+# NextAuth.js
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your-nextauth-secret # Generate with: openssl rand -base64 32
 
-- **Email/Password**: Traditional sign-up and sign-in
-- **Google OAuth**: Sign in with Google
-- **Apple OAuth**: Sign in with Apple
-- **Microsoft OAuth**: Sign in with Microsoft
+# Database
+DATABASE_URL="postgresql://username:password@localhost:5432/imgsaas?schema=public"
 
-## Deployment
+# OAuth Credentials
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+APPLE_ID=your-apple-id
+APPLE_SECRET=your-apple-secret
+AZURE_AD_CLIENT_ID=your-azure-ad-client-id
+AZURE_AD_CLIENT_SECRET=your-azure-ad-client-secret
+AZURE_AD_TENANT_ID=your-azure-ad-tenant-id
+```
+
+## 🔐 Authentication Methods
+
+- 📧 **Email/Password**: Traditional sign-up and sign-in
+- 🔑 **Google OAuth**: Sign in with Google
+- 🍎 **Apple OAuth**: Sign in with Apple
+- 💼 **Microsoft OAuth**: Sign in with Microsoft
+
+## 🚀 Deployment
 
 The application can be deployed to Vercel with minimal configuration:
 
@@ -90,6 +127,12 @@ The application can be deployed to Vercel with minimal configuration:
 3. Set up the environment variables
 4. Deploy
 
-## License
+## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+  <p>Made with ❤️ by Luigi Morel</p>
+</div>
