@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Social Media Image Generator
+
+An AI-powered SaaS application that helps users generate optimized images for various social media platforms using OpenAI's image generation capabilities.
+
+## Features
+
+- Upload images and generate variations optimized for different social media platforms
+- Support for Facebook, Twitter, and Reddit image dimensions
+- Optional caption generation
+- Modern, responsive UI with drag-and-drop functionality
+- Real-time image preview
+
+## Tech Stack
+
+- Next.js 14 with App Router
+- TypeScript
+- Tailwind CSS
+- OpenAI API
+- UploadThing for file uploads
+- NextAuth.js for authentication
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+3. Create a `.env.local` file in the root directory with the following variables:
+   ```
+   OPENAI_API_KEY=your_openai_api_key_here
+   UPLOADTHING_SECRET=your_uploadthing_secret_here
+   UPLOADTHING_APP_ID=your_uploadthing_app_id_here
+   NEXT_PUBLIC_APP_URL=http://localhost:3000
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Usage
 
-## Learn More
+1. Upload an image by dragging and dropping or clicking the upload area
+2. Select a target social media platform
+3. Optionally add a caption
+4. Click "Generate Image" to create an optimized version
+5. Download or share the generated image
 
-To learn more about Next.js, take a look at the following resources:
+## Image Dimensions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Facebook: 1200 x 630 pixels
+- Twitter: 1200 x 675 pixels
+- Reddit: 1200 x 628 pixels
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
