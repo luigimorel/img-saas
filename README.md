@@ -40,7 +40,7 @@ Here's what the application looks like:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/imgsaas.git
+   git clone https://github.com/luigimorel/img-saas.git
    cd imgsaas
    ```
 
