@@ -33,7 +33,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
-                    Start Creating <ArrowRight className="ml-2 h-4 w-4" />
+                    Get Started <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                   <Button 
                     size="lg" 
