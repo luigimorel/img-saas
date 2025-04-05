@@ -1,11 +1,11 @@
 "use client";
 
-import Button from "@/components/Button";
-import ErrorMessage from "@/components/ErrorMessage";
+ import ErrorMessage from "@/components/ErrorMessage";
 import GeneratedImages from "@/components/GeneratedImages";
 import ImageUploader from "@/components/ImageUploader";
 import PlatformSelector from "@/components/PlatformSelector";
 import TextInput from "@/components/TextInput";
+import { Button } from "@/components/ui/button";
 import { platforms } from "@/constants";
 import { useSession } from "next-auth/react";
 import { redirect } from "next/navigation";
@@ -149,8 +149,7 @@ export default function Dashboard() {
           onClick={handleGenerate}
           disabled={!selectedFile || selectedPlatforms.length === 0}
           loading={loading}
-          fullWidth
-        >
+         >
           Generate Images
         </Button>
 
