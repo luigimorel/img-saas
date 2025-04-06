@@ -1,6 +1,7 @@
 # ImageSaaS - Social Media Image Generator 🚀
 
 <div align="center">
+  <img src="public/generate.png" alt="ImageSaaS Hero" width="600"/>
   <img src="public/hero.png" alt="ImageSaaS Hero" width="600"/>
   
   [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
