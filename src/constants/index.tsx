@@ -1,4 +1,3 @@
-import { Platform } from "@/components/PlatformSelector";
 import { Clock, ImageIcon, MessageSquare, Zap } from "lucide-react";
 
 export const BrandIcon: React.FC<{ className?: string }> = ({ className }) => (
@@ -38,11 +37,15 @@ export const AnalyticsIcon: React.FC<{ className?: string }> = ({ className }) =
 );
 
 
-export const platforms: Platform[] = [
+ export const platforms = [
   { id: "facebook", name: "Facebook", size: "1200 x 630" },
   { id: "twitter", name: "Twitter", size: "1200 x 675" },
+  { id: "instagram", name: "Instagram", size: "1080 x 1080" },
+  { id: "linkedin", name: "LinkedIn", size: "1200 x 627" },
   { id: "reddit", name: "Reddit", size: "1200 x 628" },
-]; 
+  { id: "pinterest", name: "Pinterest", size: "1000 x 1500" }
+];
+
 
 export  const features = [
   {

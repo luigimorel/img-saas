@@ -29,7 +29,7 @@ export default function AuthErrorContent() {
         </div>
         <div className="mt-8 text-center">
           <Link
-            href="/auth/signin"
+            href="/auth"
             className="text-blue-600 hover:text-blue-500"
           >
             Return to Sign In
